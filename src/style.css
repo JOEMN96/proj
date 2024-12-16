@@ -40,3 +40,7 @@ a:hover {
 .chooseUserPage .card {
   position: relative;
 }
+
+.chooseUserPage .card img {
+  width: 200px;
+}
