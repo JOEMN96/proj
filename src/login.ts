@@ -5,6 +5,6 @@ loginForm?.addEventListener("submit", (e) => {
   var formData = new FormData(loginForm);
 
   if (formData.get("password") === "admin" && formData.get("userName") === "admin") {
-    window.location.replace(window.location.origin + "/choose-user-page.html");
+    window.location.replace(window.location.origin + "/pages/choose-user-page.html");
   }
 });
