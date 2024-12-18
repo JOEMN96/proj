@@ -5,14 +5,175 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assigner</title>
+    <link rel="stylesheet" href="../assigner/assigner.css">
 </head>
 
 <body>
 
     <main>
-        <h1>Assigner</h1>
-    </main>
+        <section class='wrapper'>
+            <div class='hero'>
+            </div>
+            <div class='content'>
+                <h1 class='h1--scalingSize' data-text='An awesome title'>Hello Assigner !</h1>
+            </div>
+        </section>
 
+        <section class="assignerPage">
+            <div class="header has-text-centered">
+                <h2>Requests </h2>
+            </div>
+
+            <div class="requests">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title mb-2">
+                            Issue text here
+                        </p>
+                        <p class="subtitle">2 Hours Ago</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="#">Request More details</a>
+                        </p>
+                        <p class="card-footer-item">
+                            <a class="js-modal-trigger" data-target="assigneesModal" href="#">Assign to assignee</a>
+                        </p>
+                        <div class="card-footer-item">
+                            <div class="select">
+                                <select>
+                                    <option>More</option>
+                                    <option>Rate</option>
+                                    <option>Share</option>
+                                    <option>Close</option>
+                                </select>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title mb-2">
+                            Issue text here
+                        </p>
+                        <p class="subtitle">2 Hours Ago</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="#">Request More details</a>
+                        </p>
+                        <p class="card-footer-item">
+                            <a class="js-modal-trigger" data-target="assigneesModal" href="#">Assign to assignee</a>
+                        </p>
+                        <div class="card-footer-item">
+                            <div class="select">
+                                <select>
+                                    <option>More</option>
+                                    <option>Rate</option>
+                                    <option>Share</option>
+                                    <option>Close</option>
+                                </select>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title mb-2">
+                            Issue text here
+                        </p>
+                        <p class="subtitle">2 Hours Ago</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="#">Request More details</a>
+                        </p>
+                        <p class="card-footer-item">
+                            <a class="js-modal-trigger" data-target="assigneesModal" href="#">Assign to assignee</a>
+                        </p>
+                        <div class="card-footer-item">
+                            <div class="select">
+                                <select>
+                                    <option>More</option>
+                                    <option>Rate</option>
+                                    <option>Share</option>
+                                    <option>Close</option>
+                                </select>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title mb-2">
+                            Issue text here
+                        </p>
+                        <p class="subtitle">2 Hours Ago</p>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                            <a href="#">Request More details</a>
+                        </p>
+                        <p class="card-footer-item">
+                            <a class="js-modal-trigger" data-target="assigneesModal" href="#">Assign to assignee</a>
+                        </p>
+                        <div class="card-footer-item">
+                            <div class="select">
+                                <select>
+                                    <option>More</option>
+                                    <option>Rate</option>
+                                    <option>Share</option>
+                                    <option>Close</option>
+                                </select>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="assigneesModal" class="modal">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <div class="box">
+                    <aside class="menu">
+                        <p class="menu-label">General</p>
+                        <ul class="menu-list">
+                            <li><a>AI</a></li>
+                            <li><a>Assignee 1</a></li>
+                        </ul>
+                        <p class="menu-label">HelpDesk</p>
+                        <ul class="menu-list">
+                            <li><a>HR</a></li>
+                            <li>
+                                <a class="is-active">Engineering</a>
+                                <ul>
+                                    <li><a>DEVS</a></li>
+                                    <li><a>Designers</a></li>
+                                    <li><a>SEO</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Assignee 2</a></li>
+                            <li><a>Assignee 3</a></li>
+                            <li><a>Assignee 4</a></li>
+                        </ul>
+                        <p class="menu-label">Another Sub Heading</p>
+                        <ul class="menu-list">
+                            <li><a>Assignee 5</a></li>
+                            <li><a>Assignee 6</a></li>
+                            <li><a>Assignee 7</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+    </main>
+    <script type="module" src="../index.ts"></script>
+    <script type="module" src="../assigner/assigner.ts"></script>
 </body>
 
 </html>
