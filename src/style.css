@@ -45,6 +45,10 @@ body {
   position: relative;
 }
 
+.chooseUserPage .card .content {
+  position: static;
+}
+
 .chooseUserPage .card img {
   width: 200px;
 }

@@ -1,0 +1,22 @@
+.req-listCard {
+  border: 1px solid #e1e4e8;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.req-listCard .tags {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.card-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.req-listCard h2 {
+  font-size: 18px;
+}

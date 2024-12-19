@@ -20,12 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Add a click event on buttons to open a specific modal
   (document.querySelectorAll(".js-modal-trigger") || []).forEach(($trigger: Element) => {
-    const modal = $trigger?.dataset?.target;
-    const $target = document.getElementById(modal);
+    const modal = ($trigger as HTMLElement).dataset.target;
 
-    $trigger.addEventListener("click", () => {
-      openModal($target);
-    });
+    if (modal) {
+      const $target = document.getElementById(modal);
+      $trigger.addEventListener("click", () => {
+        openModal($target);
+      });
+    }
   });
 
   // Add a click event on various child elements to close the parent modal

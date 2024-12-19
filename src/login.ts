@@ -5,6 +5,12 @@ loginForm?.addEventListener("submit", (e) => {
   var formData = new FormData(loginForm);
 
   if (formData.get("password") === "admin" && formData.get("userName") === "admin") {
-    window.location.replace(window.location.origin + "/src/pages/choose-user-page.html");
+    if (formData.get("mode") === "User") {
+      window.location.replace(window.location.origin + "/src/pages/user.html");
+    } else if (formData.get("mode") === "Assigner") {
+      window.location.replace(window.location.origin + "/src/pages/Assigner.html");
+    } else {
+      window.location.replace(window.location.origin + "/src/pages/Assignee.html");
+    }
   }
 });
