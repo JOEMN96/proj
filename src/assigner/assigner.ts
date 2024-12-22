@@ -1,3 +1,4 @@
+import formatDateFromTimestamp from "../utlils/date";
 import { IndexedDB } from "../utlils/db";
 
 const db = new IndexedDB("base", 1, "requests");
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                           <p class="title mb-2">
                               ${request.title}
                           </p>
-                          <p class="subtitle">${request.time}</p>
+                          <p class="subtitle">${formatDateFromTimestamp(request.time)}</p>
                           <p class="subtitle"> AssignedTo: ${request.assignee ? request.assignee : "none"}</p>
                       </div>
                       <footer class="card-footer">

@@ -1,3 +1,4 @@
+import formatDateFromTimestamp from "../utlils/date";
 import { IndexedDB } from "../utlils/db";
 
 let taskForm = document.querySelector("form") as HTMLFormElement;
@@ -56,7 +57,7 @@ async function reloadTaskList() {
                                                 d="M12 5C11.4477 5 11 5.44771 11 6V12.4667C11 12.4667 11 12.7274 11.1267 12.9235C11.2115 13.0898 11.3437 13.2343 11.5174 13.3346L16.1372 16.0019C16.6155 16.278 17.2271 16.1141 17.5032 15.6358C17.7793 15.1575 17.6155 14.5459 17.1372 14.2698L13 11.8812V6C13 5.44772 12.5523 5 12 5Z"
                                                 fill="#0F0F0F" />
                                         </svg>
-                                        <p>${task.time}</p>
+                                        <p>${formatDateFromTimestamp(task.time)}</p>
                                     </div>
                                 </div>
                             </div>
