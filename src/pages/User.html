@@ -11,28 +11,34 @@
 <body>
 
     <main>
-        <section class='wrapper'>
-            <div class='hero'>
-            </div>
-            <div class='content'>
-                <h1 class='h1--scalingSize' data-text='An awesome title'>Hello User !</h1>
-            </div>
-        </section>
+
+        <nav>
+            <img src="../images/logo.png" alt="logo" width="100px">
+
+            <ul>
+                <li><a href="#">Username</a></li>
+                <li><a href="../../index.html">Log Out</a></li>
+            </ul>
+        </nav>
 
         <section>
+
             <div class="container mt-2">
+                <h1>Hello User !</h1>
                 <div class="columns ">
                     <div class="column is-12-mobile is-6-tablet is-6-desktop">
                         <div class="card">
                             <div class="card-content">
                                 <h1 class="mb-2">Raise a New Request</h1>
+
                                 <form>
-                                    <input class="input mb-3" type="text" placeholder="Title" />
-                                    <textarea class="textarea mb-3" placeholder="Problem statement"
-                                        rows="10"></textarea>
+                                    <input class="input mb-3" required type="text" id="title" name="title"
+                                        placeholder="Title" />
+                                    <textarea class="textarea mb-3" id="desc" name="desc"
+                                        placeholder="Problem statement" rows="10"></textarea>
                                     <div>
-                                        <div class="select ">
-                                            <select id="mode" name="mode">
+                                        <div class="select">
+                                            <select id="mode" name="priority" id="priority">
                                                 <option>Priority - Medium</option>
                                                 <option>High</option>
                                                 <option>Low</option>
@@ -45,53 +51,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-12-mobile is-6-tablet is-6-desktop">
-                        <div class="card">
-                            <div class="card-content mb-2">
-                                <h1 class="mb-2">Previous Requests</h1>
-                                <div class="req-listCard">
-                                    <h2>Request Title</h2>
-                                    <h3>Assignee: {Name here}</h3>
-                                    <div class="tags">
-                                        <p>Status: <span class="tag is-danger">Pending</span></p>
-                                        <p>Priority: <span class="tag is-warning">Low</span></p>
-                                    </div>
-                                </div>
-                                <div class="req-listCard">
-                                    <h2>Request Title</h2>
-                                    <h3>Assignee: {Name here}</h3>
-                                    <div class="tags">
-                                        <p>Status: <span class="tag is-danger">Pending</span></p>
-                                        <p>Priority: <span class="tag is-warning">Low</span></p>
-                                    </div>
-                                </div>
-                                <div class="req-listCard">
-                                    <h2>Request Title</h2>
-                                    <h3>Assignee: {Name here}</h3>
-                                    <div class="tags">
-                                        <p>Status: <span class="tag is-danger">Pending</span></p>
-                                        <p>Priority: <span class="tag is-warning">Low</span></p>
-                                    </div>
-                                </div>
-                                <div class="req-listCard">
-                                    <h2>Request Title</h2>
-                                    <h3>Assignee: {Name here}</h3>
-                                    <div class="tags">
-                                        <p>Status: <span class="tag is-danger">Pending</span></p>
-                                        <p>Priority: <span class="tag is-warning">Low</span></p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="column is-12-mobile is-6-tablet is-6-desktop ">
+                        <h1 class="mb-2 prevReq">Previous Requests</h1>
+                        <div class="taskList"></div>
                     </div>
                 </div>
             </div>
 
         </section>
+
+        <footer>
+            <p>&copy;Algocodestack <span class="year">2025</span> All rights reserved</p>
+        </footer>
     </main>
 
     <script type="module" src="../index.ts"></script>
+    <script type="module" src="../user/user.ts"></script>
 
 </body>
 

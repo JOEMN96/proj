@@ -1,3 +1,4 @@
 import "./style.css";
-// import typescriptLogo from './typescript.svg'
-// import { setupCounter } from './counter.ts'
+
+const footerDate = <HTMLSpanElement>document.querySelector("footer span");
+footerDate.textContent = String(new Date().getFullYear());

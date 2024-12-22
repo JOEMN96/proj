@@ -230,3 +230,28 @@ body {
   z-index: 1;
   pointer-events: none;
 }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+main > footer {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
