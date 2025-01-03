@@ -31,3 +31,16 @@
   padding: 15px;
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .js-modal-trigger {
+    text-align: center;
+  }
+  .card-content {
+    padding: 20px 15px !important;
+  }
+  .card-content .title.mb-2 {
+    font-size: 24px !important;
+    margin-bottom: 14px !important;
+  }
+}
